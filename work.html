@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="work.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="Image-container">
+    <img src="images/img1.png" alt="logo" style="width:200px;height:150px;">
+    </div>
+    <div>Mzamomtsha Primary School</div>
+    </div>
+
+
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Events</a></li>
+      <li><a href="#about">Gallery</a></li>
+    </ul>
+    <br><br><br>
+    <!--paragraph inside a button-->
+
+      <fieldset><center><p></p> <b>"LET YOUR CHILD COME AND PROSPER WITH US. REMEMBER ENTER TO LEARN AND LEAVE TO BE SERVED"</b></fieldsetcenter></center>
+
+ <p>
+   <center>
+   <p class="paragraph">
+      Provide opportunities for holistic development of the students
+      Provide a safe learning environment in which students feel empowered to participate in their education
+      Offer individual attention by enriching high performing students and supporting learners at risk<span id="dots">...</span><span id="more">Offer an exemplary model of education that is current, creative and proactive
+      Put in place structures, policies and procedures that will support and enrich the teaching and learning process
+      Support and provide opportunities for staff development
+      Encourage parental involvement to bolster the programme of the school
+      Develop environmental awareness and activism
+      Form partnership with community organizations and universities in support if the school and its students, and in support of excellent education
+
+               Our values and beliefs include:
+               Mutual respect
+               Democracy
+               Honesty
+               Commitment
+               Punctuality
+               Integrity
+               Sustainability
+  </div>
+</center>
+
+
+
+
+  <br><br><br>
+  <footer id="footer">
+<center><a href="https://www.facebook.com/theprimaryschool">
+        <img alt="footer" class="auto-style5" height="143" src="images/social-icons.svg" width="176">
+    </a></center>
+</footer>
+
+<!-- Button with a Function called myFunction -->
+ <center><button onclick="myFunction()" id="myBtn">Read more</button></center>
+ <script>
+   /*Calling myFunction toand addind variables for read less or more button*/
+ function myFunction() {
+   var dots = document.getElementById("dots");
+   var moreText = document.getElementById("more");
+   var btnText = document.getElementById("myBtn");
+
+   if (dots.style.display === "none") {
+     dots.style.display = "inline";
+     btnText.innerHTML = "Read more";
+     moreText.style.display = "none";
+   } else {
+     dots.style.display = "none";
+     btnText.innerHTML = "Read less";
+     moreText.style.display = "inline";
+   }
+ }
+ </script>
+
+
+</body>
+</html>
